@@ -1,3 +1,3 @@
 # dhc_android
 
-DHC様Androidアプリの一次リポジトリ
+DHC Android Application for review
