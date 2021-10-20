@@ -1,0 +1,42 @@
+package com.example.dhc.model
+
+import com.google.gson.annotations.SerializedName
+
+class MedicalExam (
+    @SerializedName("uuid") val id: String,
+    @SerializedName("uuid") val uuid: String,
+    @SerializedName("consulDate") val consulDate: String,
+    @SerializedName("height") val height: String,
+    @SerializedName("weight") val weight: String,
+    @SerializedName("bmi") val bmi: String,
+    @SerializedName("chest") val chest: String,
+    @SerializedName("eyesightRight") val eyesightRight: String,
+    @SerializedName("eyesightLeft") val eyesightLeft: String,
+    @SerializedName("intraPressureRight") val intraPressureRight: String,
+    @SerializedName("intraPressureLeft") val intraPressureLeft: String,
+    @SerializedName("hearingRight") val hearingRight: String,
+    @SerializedName("hearingLeft") val hearingLeft: String,
+    @SerializedName("bloodPressureMin") val bloodPressureMin: String,
+    @SerializedName("bloodPressureMax") val bloodPressureMax: String,
+    @SerializedName("totalChoresterol") val totalChoresterol: String,
+    @SerializedName("hdlChoresterol") val hdlChoresterol: String,
+    @SerializedName("ldlChoresterol") val ldlChoresterol: String,
+    @SerializedName("tg") val tg: String,
+    @SerializedName("fpg") val fpg: String,
+    @SerializedName("gtp") val gtp: String,
+    @SerializedName("ast") val ast: String,
+    @SerializedName("alt") val alt: String,
+    @SerializedName("tg") val ua: String,
+    @SerializedName("hb") val hb: String,
+    @SerializedName("rbc") val rbc: String,
+    @SerializedName("ht") val ht: String,
+    @SerializedName("mcv") val mcv: String,
+    @SerializedName("mcvPg") val mcvPg: String,
+    @SerializedName("mchc") val mchc: String,
+    @SerializedName("fe") val fe: String,
+    @SerializedName("tibc") val tibc: String,
+    @SerializedName("bodyFat") val bodyFat: String,
+    @SerializedName("psa") val psa: String,
+    @SerializedName("cr") val cr: String,
+    @SerializedName("cavi") val cavi: String
+)

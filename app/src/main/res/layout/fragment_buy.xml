@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".fragment.BuyFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/margin_padding_size_xxlarge">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/logLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingLeft="@dimen/margin_padding_size_large"
+                android:paddingRight="@dimen/margin_padding_size_medium"
+                android:paddingVertical="@dimen/margin_padding_size_large"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:textColor="@color/brand_7"
+                    android:text="@string/buy_make_title"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/text_size_large"
+                    style="@style/TextDefault" />
+
+                <ImageView
+                    android:id="@+id/guidance"
+                    android:src="@drawable/ic_howtouse"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/listLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_padding_size_medium"
+                app:layout_constraintTop_toBottomOf="@+id/logLayout"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.example.dhc.customviews.SupplementItem
+                    android:id="@+id/counselingItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:board="bg_round16_brand1"
+                    app:avatar="makeup_1"
+                    app:text="buy_challenge1" />
+
+                <com.example.dhc.customviews.SupplementItem
+                    android:id="@+id/examItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_padding_size_medium"
+                    app:board="bg_round16_brand2"
+                    app:avatar="makeup_2"
+                    app:text="buy_challenge2" />
+
+                <com.example.dhc.customviews.SupplementItem
+                    android:id="@+id/issueItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_padding_size_medium"
+                    app:board="bg_round16_brand5"
+                    app:avatar="makeup_3"
+                    app:text="buy_challenge3" />
+
+                <com.example.dhc.customviews.SupplementItem
+                    android:id="@+id/testItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_padding_size_medium"
+                    app:board="bg_round16_brand4"
+                    app:avatar="makeup_4"
+                    app:text="buy_challenge4" />
+
+                <com.example.dhc.customviews.SupplementItem
+                    android:id="@+id/ingredientItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_padding_size_medium"
+                    app:board="bg_round16_brand3"
+                    app:avatar="makeup_5"
+                    app:text="buy_challenge5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/purchaseHistoryLayout"
+                app:layout_constraintTop_toBottomOf="@id/listLayout"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:padding="@dimen/margin_padding_size_medium">
+
+                <TextView
+                    android:text="@string/home_recently_purchased_supplements"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_padding_size_medium"
+                    style="@style/TextLarge" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_padding_size_medium"
+                    android:background="@drawable/bg_border_brand6">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/margin_padding_size_medium"
+                        android:background="@drawable/bg_round8_brand6">
+
+                        <TextView
+                            android:id="@+id/purchasedDate"
+                            android:text="2019.09.27に購入"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/size_8"
+                            style="@style/TextSmall" />
+
+                        <TextView
+                            android:id="@+id/purchasedFrom"
+                            android:text="DHCラボ カスタムメイドサプリ"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/size_8"
+                            style="@style/TextMedium" />
+
+                        <TextView
+                            android:id="@+id/purchasedAmount"
+                            android:text="30日分 / ￥0,000"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/size_8"
+                            style="@style/TextMedium"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/counselingBtn"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/counseling"
+                                android:textColor="@color/white"
+                                android:background="@drawable/bg_round4_brand1"
+                                style="@style/btn_style_small" />
+
+                            <TextView
+                                android:id="@+id/medicalCheckupBtn"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:text="@string/physical_checkup"
+                                android:textColor="@color/white"
+                                android:background="@drawable/bg_round4_brand2"
+                                android:layout_marginLeft="@dimen/margin_padding_size_small"
+                                style="@style/btn_style_small" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="0.8"
+                                style="@style/btn_style_small" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/buyAgainBtn"
+                        android:layout_width="match_parent"
+                        android:text="@string/home_purchased_list"
+                        android:layout_marginTop="@dimen/margin_padding_size_medium"
+                        android:layout_marginHorizontal="@dimen/margin_padding_size_xxlarge"
+                        android:textColor="@color/brand_7"
+                        android:background="@drawable/bg_round8_brand7_transparent"
+                        style="@style/btn_style_medium" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

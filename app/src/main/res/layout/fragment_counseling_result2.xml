@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_padding_size_medium"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round15_gray"
+            android:padding="@dimen/margin_padding_size_medium">
+
+            <TextView
+                android:id="@+id/txt_counseling_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_counseling_analyseresult"
+                android:textSize="@dimen/text_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_couseling_result"
+                android:layout_width="@dimen/btn_height_big"
+                android:layout_height="@dimen/btn_height_big"
+                android:src="@drawable/counseling_result"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/txt_counseling_result" />
+
+            <TextView
+                android:id="@+id/txt_counseling_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/interesting_in_lifestyle"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_counseling_result" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_padding_size_xlarge"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/txt_counseling_content">
+
+                <TextView
+                    android:id="@+id/txt_recommend_supplement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/recommend_supplement"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_counseling_content" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_recommend_supplement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_size_medium"
+            android:layout_marginBottom="@dimen/margin_padding_size_large"
+            android:paddingStart="@dimen/margin_padding_size_medium"
+            android:paddingEnd="@dimen/margin_padding_size_medium"
+            android:text="@string/message_make_supplement" />
+
+        <Button
+            android:id="@+id/btn_recommend_ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/btn_style_large"
+            android:layout_marginStart="@dimen/margin_padding_size_medium"
+            android:layout_marginEnd="@dimen/margin_padding_size_medium"
+            android:layout_marginBottom="@dimen/margin_padding_size_medium"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_round30_brand7"
+            android:text="@string/make_supplement_by_ingredient"/>
+    </LinearLayout>
+</ScrollView>

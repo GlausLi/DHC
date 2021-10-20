@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Font Size -->
+    <dimen name="size_text_12">12sp</dimen>
+    <dimen name="size_text_14">14sp</dimen>
+    <dimen name="size_text_16">16sp</dimen>
+    <dimen name="size_text_18">18sp</dimen>
+    <dimen name="size_text_24">24sp</dimen>
+
+    <dimen name="text_size_micro">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="text_size_xlarge">34sp</dimen>
+    <dimen name="text_size_xxlarge">45sp</dimen>
+    <dimen name="text_size_xxxlarge">56sp</dimen>
+
+    <!-- Launcher Icon Size -->
+    <dimen name="launcher_icon_size">@dimen/standard_touch_size</dimen>
+
+    <!-- Touch Target Size -->
+    <dimen name="standard_touch_size">48dp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="toolbar_margin_size">4dp</dimen>
+    <dimen name="toolbar_icon_size">24dp</dimen>
+
+    <!-- Margin/Padding sizes -->
+    <dimen name="margin_padding_size_xxsmall">2dp</dimen>
+    <dimen name="margin_padding_size_xsmall">4dp</dimen>
+    <dimen name="margin_padding_size_small">8dp</dimen>
+    <dimen name="margin_padding_size_medium">16dp</dimen>
+    <dimen name="margin_padding_size_large">24dp</dimen>
+    <dimen name="margin_padding_size_xlarge">32dp</dimen>
+    <dimen name="margin_padding_size_xxlarge">40dp</dimen>
+
+    <dimen name="size_2">2dp</dimen>
+    <dimen name="size_4">4dp</dimen>
+    <dimen name="size_6">6dp</dimen>
+    <dimen name="size_8">8dp</dimen>
+    <dimen name="size_10">10dp</dimen>
+    <dimen name="size_12">12dp</dimen>
+    <dimen name="size_14">14dp</dimen>
+    <dimen name="size_16">16dp</dimen>
+    <dimen name="size_18">18dp</dimen>
+    <dimen name="size_20">20dp</dimen>
+    <dimen name="size_22">22dp</dimen>
+    <dimen name="size_24">24dp</dimen>
+    <dimen name="size_26">26dp</dimen>
+    <dimen name="size_30">30dp</dimen>
+    <dimen name="size_36">36dp</dimen>
+    <dimen name="size_40">40dp</dimen>
+    <dimen name="size_46">46dp</dimen>
+
+    <!--  Intro  -->
+    <dimen name="splash_logo_size">104dp</dimen>
+    <dimen name="intro_description_height">80dp</dimen>
+    <dimen name="intro_input_box_radius_size">4dp</dimen>
+
+    <!--  Image/Icon Sizes -->
+    <dimen name="item_arrow_width">7dp</dimen>
+    <dimen name="item_arrow_height">15dp</dimen>
+
+    <!-- Button Sizes -->
+    <dimen name="btn_height_big">40dp</dimen>
+    <dimen name="btn_height_medium">32dp</dimen>
+    <dimen name="btn_height_small">24dp</dimen>
+
+    <!-- Tag Container Interval -->
+    <dimen name="tag_horizontal_interval">10dp</dimen>
+    <dimen name="tag_vertical_interval">10dp</dimen>
+
+    <dimen name="bg_image_height">140dp</dimen>
+
+</resources>

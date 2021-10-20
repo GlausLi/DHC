@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/examTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/brand_10"
+        android:paddingHorizontal="@dimen/margin_padding_size_large"
+        android:paddingTop="@dimen/margin_padding_size_medium"
+        android:paddingBottom="@dimen/margin_padding_size_small"
+        android:text="@string/body_weight"
+        android:textColor="@color/brand_7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/examTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/examEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_marginHorizontal="@dimen/margin_padding_size_large"
+            android:layout_marginVertical="@dimen/margin_padding_size_medium"
+            android:paddingVertical="@dimen/margin_padding_size_xsmall"
+            android:paddingHorizontal="@dimen/margin_padding_size_medium"
+            android:background="@drawable/bg_round8_brand7_transparent"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/examUnit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="center_vertical"
+            android:text="@string/kg"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/brand_7" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

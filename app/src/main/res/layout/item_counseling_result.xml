@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_round15_white"
+    android:padding="@dimen/margin_padding_size_medium"
+    android:layout_marginTop="@dimen/margin_padding_size_small"
+    android:layout_marginBottom="@dimen/margin_padding_size_small"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+    android:id="@+id/dateIcon"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:background="@drawable/date_icon"/>
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2019/10/18 19:23"
+        android:layout_marginLeft="@dimen/margin_padding_size_medium"
+        android:textSize="@dimen/text_size_medium"
+        app:layout_constraintStart_toEndOf="@+id/dateIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/basisCounselingBtn"
+        style="@style/btn_style_small"
+        android:text="@string/basic_counseling_btn"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/btn_height_small"
+        android:layout_marginTop="@dimen/margin_padding_size_medium"
+        android:paddingHorizontal="@dimen/margin_padding_size_xlarge"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDate"
+        android:background="@drawable/bg_round8_brand1"/>
+
+    <Button
+        android:id="@+id/drinkMuchBtn"
+        style="@style/btn_style_small"
+        android:text="@string/drink_much_btn"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/btn_height_small"
+        android:layout_marginTop="@dimen/margin_padding_size_medium"
+        android:paddingHorizontal="@dimen/margin_padding_size_large"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDate"
+        android:background="@drawable/bg_round8_brand5"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

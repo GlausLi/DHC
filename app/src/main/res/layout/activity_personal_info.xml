@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/margin_padding_size_xxlarge"
+    android:orientation="vertical"
+    tools:context=".activity.PersonalInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/register"
+            android:layout_marginBottom="@dimen/margin_padding_size_xxlarge"
+            android:gravity="center"
+            android:text="@string/intro_personal_info_title"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText"
+            android:layout_marginBottom="@dimen/margin_padding_size_xsmall"
+            android:gravity="center"
+            android:text="@string/intro_register_nickname"
+            android:textSize="@dimen/text_size_medium" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/text_input_layout_style"
+            android:hint="@string/intro_input_hint"
+            android:layout_above="@+id/selectGender"
+            android:layout_marginBottom="@dimen/margin_padding_size_xlarge"
+            android:textSize="@dimen/text_size_small"
+            android:maxLength="8"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/selectGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/gender"
+            android:layout_marginBottom="@dimen/margin_padding_size_small"
+            android:gravity="center"
+            android:text="@string/intro_select_gender"
+            android:textSize="@dimen/text_size_medium" />
+
+        <LinearLayout
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/maleBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/intro_male"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_round8_brand7"
+                style="@style/btn_style_medium" />
+
+            <TextView
+                android:id="@+id/femaleBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="@dimen/margin_padding_size_small"
+                android:text="@string/intro_female"
+                android:textColor="@color/brand_9"
+                android:background="@drawable/bg_round8_transparent"
+                style="@style/btn_style_medium" />
+
+            <TextView
+                android:id="@+id/otherGenderBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/intro_other_gender"
+                android:textColor="@color/brand_9"
+                android:background="@drawable/bg_round8_transparent"
+                style="@style/btn_style_medium" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender"
+            android:layout_marginTop="@dimen/margin_padding_size_medium"
+            android:text="@string/intro_nickname_description"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/browser"
+            android:layout_marginBottom="@dimen/margin_padding_size_xxsmall"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/browser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/nextBtn"
+            android:layout_marginBottom="@dimen/margin_padding_size_medium"
+            android:gravity="center"
+            android:text="@string/intro_view_browser"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/nextBtn"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/margin_padding_size_xxlarge"
+            android:layout_alignParentBottom="true"
+            android:text="@string/intro_accept_terms_of_service"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_round16_brand7"
+            style="@style/btn_style_large" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

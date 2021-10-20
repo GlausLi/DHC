@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextXLarge">
+        <item name="android:textColor">@color/text_default</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+    <style name="TextLarge">
+        <item name="android:textColor">@color/text_default</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <style name="TextDefault">
+        <item name="android:textColor">@color/text_default</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+    <style name="TextMedium">
+        <item name="android:textColor">@color/text_default</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <style name="TextSmall">
+        <item name="android:textColor">@color/text_default</item>
+        <item name="android:textSize">@dimen/text_size_micro</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="btn_style_large">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/margin_padding_size_medium</item>
+        <item name="android:paddingBottom">@dimen/margin_padding_size_medium</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_round16_brand7</item>
+    </style>
+
+    <style name="btn_style_medium">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/margin_padding_size_small</item>
+        <item name="android:paddingBottom">@dimen/margin_padding_size_small</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="btn_style_small">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/margin_padding_size_xsmall</item>
+        <item name="android:paddingBottom">@dimen/margin_padding_size_xsmall</item>
+        <item name="android:textSize">@dimen/text_size_micro</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#004098</color>
+
+
+    <color name="text_default">@color/brand_8</color>
+    <color name="text_white">@color/white</color>
+    <color name="text_blue">@color/brand_7</color>
+
+
+    <color name="brand_1">#82D7C7</color>
+    <color name="brand_2">#7AB1CE</color>
+    <color name="brand_3">#D690AA</color>
+    <color name="brand_4">#BD92C6</color>
+    <color name="brand_5">#FB9562</color>
+    <color name="brand_6">#EDEDEF</color>
+    <color name="brand_7">#004098</color>
+    <color name="brand_8">#515459</color>
+    <color name="brand_9">#BCBDBF</color>
+
+    <color name="blue_light">#e5ebf4</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- intro -->
+    <color name="ash">#afafaf</color>
+    <color name="color_tabDot_selected">#004098</color>
+    <color name="color_tabDot_normal">#cddaeb</color>
+
+    <!-- common -->
+    <color name="brand_10">#DDE7F4</color>
+
+</resources>

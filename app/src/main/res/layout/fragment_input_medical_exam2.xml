@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.InputMedicalExamFragment1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/visitDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/margin_padding_size_xxlarge"
+                android:paddingVertical="@dimen/margin_padding_size_large"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/inputWithCamera">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="@string/visit_date"
+                    android:textColor="@color/brand_7"
+                    android:textSize="@dimen/margin_padding_size_medium" />
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:layout_gravity="center"
+                    android:paddingVertical="@dimen/margin_padding_size_xsmall"
+                    android:paddingHorizontal="@dimen/margin_padding_size_medium"
+                    android:background="@drawable/bg_round8_brand7_transparent"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_padding_size_medium"
+                android:padding="@dimen/margin_padding_size_xxsmall"
+                android:background="@drawable/bg_round16_border7_2_white"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/visitDate">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_top_round16_brand10"
+                    android:paddingHorizontal="@dimen/margin_padding_size_large"
+                    android:paddingTop="@dimen/margin_padding_size_medium"
+                    android:paddingBottom="@dimen/margin_padding_size_small"
+                    android:text="@string/height"
+                    android:textColor="@color/brand_7" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="@dimen/text_size_medium"
+                        android:layout_marginHorizontal="@dimen/margin_padding_size_large"
+                        android:layout_marginVertical="@dimen/margin_padding_size_medium"
+                        android:paddingVertical="@dimen/margin_padding_size_xsmall"
+                        android:paddingHorizontal="@dimen/margin_padding_size_medium"
+                        android:background="@drawable/bg_round8_brand7_transparent"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/centimeter"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textColor="@color/brand_7" />
+                </LinearLayout>
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="body_weight"
+                    app:unit="kg" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="BMI"
+                    app:unit="kg_per_m2" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="waist_circumference"
+                    app:unit="cm2" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="vision_right"
+                    app:unit="empty_string" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="vision_left"
+                    app:unit="empty_string" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="pressure_right"
+                    app:unit="mmHg" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="pressure_left"
+                    app:unit="mmHg" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="hearing_right"
+                    app:unit="dB" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="hearing_left"
+                    app:unit="dB" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="systolic_blood_pressure"
+                    app:unit="mmHg" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="diastolic_blood_pressure"
+                    app:unit="mmHg" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="total_cholesterol"
+                    app:unit="mg_per_dL" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="HDL_cholesterol"
+                    app:unit="mg_per_dL" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="LDL_cholesterol"
+                    app:unit="mg_per_dL" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="neutral_fat"
+                    app:unit="mg_per_dL" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="fasting_blood_glucose"
+                    app:unit="mg_per_dL" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="gamma_GTP"
+                    app:unit="U_per_L" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="ast_got"
+                    app:unit="U_per_L" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="alt_got"
+                    app:unit="U_per_L" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="uric_acid"
+                    app:unit="mg_per_dL" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="hemoglobin"
+                    app:unit="g_per_dL" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="red_blood_cell"
+                    app:unit="ten_thousand_per_mm3" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="hematocrit"
+                    app:unit="percent" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="MCV"
+                    app:unit="micrometer3" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="MCH"
+                    app:unit="empty_string" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="MCHC"
+                    app:unit="percent" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="serum_iron"
+                    app:unit="microgram_per_dL" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="ti_binding_energy"
+                    app:unit="microgram_per_dL" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="body_fat_rate"
+                    app:unit="percent" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="prostate"
+                    app:unit="ng_per_mL" />
+
+                <com.example.dhc.customviews.ExamItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="creatinine"
+                    app:unit="mg_per_dL" />
+
+<!--                <com.example.dhc.customviews.ExamItem-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:title="CAVI"-->
+<!--                    app:unit="empty_string" />-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/brand_10"
+                    android:paddingHorizontal="@dimen/margin_padding_size_large"
+                    android:paddingTop="@dimen/margin_padding_size_medium"
+                    android:paddingBottom="@dimen/margin_padding_size_small"
+                    android:text="@string/CAVI"
+                    android:textColor="@color/brand_7" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_bottom_round16_transparent">
+
+                    <EditText
+                        android:id="@+id/heightInputBox"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textSize="@dimen/text_size_medium"
+                        android:layout_marginHorizontal="@dimen/margin_padding_size_large"
+                        android:layout_marginVertical="@dimen/margin_padding_size_medium"
+                        android:paddingVertical="@dimen/margin_padding_size_xsmall"
+                        android:paddingHorizontal="@dimen/margin_padding_size_medium"
+                        android:background="@drawable/bg_round8_brand7_transparent"
+                        android:inputType="numberDecimal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/empty_string"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textColor="@color/brand_7" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/saveBtn"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="@dimen/margin_padding_size_xxlarge"
+                android:layout_marginVertical="@dimen/margin_padding_size_large"
+                android:text="@string/save_and_see_btn"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_round16_brand7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/btn_style_large" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="counseling_result_array">
+        <item>燃焼</item>
+        <item>食欲抑制</item>
+        <item>難聴</item>
+        <item>脂質異常</item>
+        <item>アルコール</item>
+        <item>痛風</item>
+        <item>貧血</item>
+        <item>高血圧</item>
+        <item>ストレス</item>
+        <item>糖尿病</item>
+        <item>男性活力</item>
+        <item>ロコモ</item>
+        <item>眼の機能改善</item>
+        <item>免疫</item>
+        <item>更年期障害</item>
+        <item>薄毛</item>
+        <item>認知症</item>
+        <item>前立腺肥大症</item>
+        <item>過活動膀胱</item>
+        <item>睡眠改善</item>
+        <item>耳鳴り</item>
+        <item>冷え性</item>
+        <item>PMS</item>
+        <item>関節抗炎症</item>
+        <item>関節成分</item>
+        <item>腸内環境</item>
+        <item>消化</item>
+        <item>むくみ</item>
+        <item>体臭</item>
+        <item>疲労</item>
+        <item>ハリ</item>
+        <item>まつ毛</item>
+        <item>乾燥</item>
+        <item>美白</item>
+        <item>アレルギー</item>
+    </string-array>
+</resources>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/image_edit"
+            android:src="@drawable/ic_edit"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/size_26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/size_36"
+            android:layout_marginTop="@dimen/size_16" />
+
+        <TextView
+            android:id="@+id/text_challenge"
+            android:text="HANAKOさん"
+            app:layout_constraintLeft_toRightOf="@+id/image_edit"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_26"
+            android:layout_marginTop="@dimen/size_20"
+            style="@style/TextLarge" />
+
+        <ImageView
+            android:id="@+id/howToUseIcon"
+            android:src="@drawable/ic_howtouse"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/size_36"
+            android:layout_marginTop="@dimen/size_16" />
+
+        <LinearLayout
+            android:id="@+id/linearlayout_board1"
+            app:layout_constraintTop_toBottomOf="@+id/text_challenge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_20"
+            android:layout_marginEnd="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_8"
+            android:padding="@dimen/size_16"
+            android:background="@drawable/bg_round15_brand6"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/home_badge_earned"
+                    android:layout_marginTop="@dimen/size_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="@string/home_view_all"
+                    android:layout_marginTop="@dimen/size_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_right_arrow"
+                    android:drawablePadding="@dimen/size_16"
+                    android:textAlignment="textEnd"
+                    style="@style/TextSmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10"
+                android:baselineAligned="false">
+
+                <TextView
+                    android:text="@string/research_beginner"
+                    android:drawableTop="@drawable/badge_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_blue"
+                    android:textAlignment="center"
+                    style="@style/TextSmall"
+                    android:layout_weight="0.33" />
+
+                <TextView
+                    android:text="@string/physical_researcher"
+                    android:drawableTop="@drawable/badge_bronze"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_blue"
+                    android:textAlignment="center"
+                    style="@style/TextSmall"
+                    android:layout_weight="0.33" />
+
+                <TextView
+                    android:drawableTop="@drawable/ic_empty_badge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_weight="0.33" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/logLayout"
+            app:layout_constraintTop_toBottomOf="@+id/linearlayout_board1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_light"
+            android:layout_marginTop="@dimen/size_30"
+            android:paddingStart="@dimen/size_20"
+            android:paddingEnd="@dimen/size_20"
+            android:paddingTop="@dimen/size_20"
+            android:orientation="vertical" >
+
+            <com.example.dhc.customviews.IconButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_20"
+                android:layout_marginRight="@dimen/size_20"
+                android:layout_marginTop="@dimen/size_10"
+                android:layout_marginBottom="@dimen/size_20"
+                app:btnIcon="ic_heart"
+                app:btnText="@string/home_take_today_record" />
+
+            <ImageView
+                android:id="@+id/know_input"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:src="@drawable/ic_know_input"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="@dimen/size_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_30">
+
+                <ImageView
+                    android:id="@+id/iv_doctor_man"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:src="@drawable/ic_doctor_man"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.7" />
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="@+id/iv_doctor_man"
+                    app:layout_constraintLeft_toLeftOf="@+id/iv_doctor_man"
+                    app:layout_constraintRight_toRightOf="@+id/guideline"
+                    android:text="@string/home_guide_daily_life"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="@dimen/size_6"
+                    android:layout_marginStart="@dimen/size_16"
+                    style="@style/TextDefault" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_30">
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:text="カレンダーが入ります"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="@dimen/size_6"
+                    android:layout_marginStart="@dimen/size_16"
+                    style="@style/TextDefault" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_30">
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:text="チャートが入ります"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="@dimen/size_6"
+                    android:layout_marginStart="@dimen/size_16"
+                    style="@style/TextDefault" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearlayout_board3"
+            app:layout_constraintTop_toBottomOf="@+id/logLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_20"
+            android:layout_marginEnd="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_8"
+            android:padding="@dimen/size_16"
+            android:background="@drawable/bg_round15_brand6"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="ご利用状況"
+                android:layout_marginTop="@dimen/size_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearlayout_board4"
+            app:layout_constraintTop_toBottomOf="@+id/linearlayout_board3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_20"
+            android:layout_marginEnd="@dimen/size_20"
+            android:layout_marginTop="@dimen/size_8"
+            android:padding="@dimen/size_16"
+            android:background="@drawable/bg_round15_brand6"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="こころとからだをもっと詳しく見る"
+                    android:layout_marginTop="@dimen/size_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:text="カウンセリング結果を見る"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_20"
+                android:layout_marginBottom="@dimen/size_30"
+                android:layout_marginLeft="@dimen/size_40"
+                android:layout_marginRight="@dimen/size_40"
+                android:paddingTop="@dimen/size_20"
+                android:paddingBottom="@dimen/size_16"
+                android:background="@drawable/bg_round30_border7_white"
+                android:textColor="@color/brand_7"
+                style="@style/TextDefault" />
+            <Button
+                android:text="健康診断結果を見る"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_20"
+                android:layout_marginBottom="@dimen/size_30"
+                android:layout_marginLeft="@dimen/size_40"
+                android:layout_marginRight="@dimen/size_40"
+                android:paddingTop="@dimen/size_20"
+                android:paddingBottom="@dimen/size_16"
+                android:background="@drawable/bg_round30_border7_white"
+                android:textColor="@color/brand_7"
+                style="@style/TextDefault" />
+            <Button
+                android:text="健康診断結果を登録する"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_20"
+                android:layout_marginBottom="@dimen/size_30"
+                android:layout_marginLeft="@dimen/size_40"
+                android:layout_marginRight="@dimen/size_40"
+                android:paddingTop="@dimen/size_20"
+                android:paddingBottom="@dimen/size_16"
+                android:background="@drawable/bg_round30_border7_white"
+                android:textColor="@color/brand_7"
+                style="@style/TextDefault" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

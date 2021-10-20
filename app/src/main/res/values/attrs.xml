@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ChallengeItem">
+        <attr name="board" format="string" />
+        <attr name="avatar" format="string"/>
+        <attr name="text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="IconButton">
+        <attr name="btnBg" format="string" />
+        <attr name="btnIcon" format="string" />
+        <attr name="btnText" format="string" />
+        <attr name="btnTextColor" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ExamItem">
+        <attr name="title" format="string" />
+        <attr name="unit" format="string" />
+    </declare-styleable>
+</resources>
